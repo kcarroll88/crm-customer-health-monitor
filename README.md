@@ -1,3 +1,7 @@
+<img width="1701" height="1152" alt="Screenshot 2026-04-09 at 11 13 18 AM" src="https://github.com/user-attachments/assets/08ba8aed-8759-4731-a9e4-e038ae70ce27" />
+
+
+
 # CRM Customer Health Monitor
 
 An AI-powered customer health scoring dashboard for Apex CRM. Uses Claude to analyze customer accounts, flag at-risk customers, and recommend actions for account managers.
