@@ -1,17 +1,24 @@
 import os
 import json
+import asyncio
 import anthropic
 from dotenv import load_dotenv
 
 load_dotenv()
 
-client = anthropic.Anthropic()
+try:
+    import streamlit as st
+    api_key = st.secrets.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
+except Exception:
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+
+client = anthropic.Anthropic(api_key=api_key)
 
 def load_customers(filepath="data/customer-data.json"):
     with open(filepath, "r") as f:
         return json.load(f)
 
-def analyze_customer(customer: dict) -> dict:
+async def analyze_customer(customer: dict) -> dict:
     prompt = f"""You are a customer success analyst for Apex CRM.
 
 Analyze this customer account and return a health score and recommendation.
@@ -46,21 +53,22 @@ Respond in this exact JSON format with no other text:
     text = text.replace("```json", "").replace("```", "").strip()
     return json.loads(text)
 
-def analyze_all_customers():
+async def analyze_all_customers():
     customers = load_customers()
-    results = []
-
     print(f"Analyzing {len(customers)} customer accounts...")
+    
+    # run all customers concurrently instead of one at a time
+    results = await asyncio.gather(*[
+        analyze_customer(customer) for customer in customers
+    ])
+    
+    return list(results)
 
-    for customer in customers:
-        print(f"  → {customer.get('company_name')}...")
-        result = analyze_customer(customer)
-        results.append(result)
-
-    return results
+def run_analysis():
+    return asyncio.run(analyze_all_customers())
 
 if __name__ == "__main__":
-    results = analyze_all_customers()
+    results = run_analysis()
     for r in results:
         print(f"\n{r['company_name']}")
         print(f"  Health Score: {r['health_score']}/100")
