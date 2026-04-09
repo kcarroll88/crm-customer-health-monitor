@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import json
 import time
+import asyncio
 from datetime import datetime
 from agent import analyze_customer, load_customers
 
@@ -1101,7 +1102,7 @@ if should_run:
         feed_items.append((f"Analyzing <strong>{name}</strong>…", "analyzing", None, "", ts))
         feed_slot.markdown(f'<div class="panel">{render_feed(feed_items)}</div>', unsafe_allow_html=True)
 
-        result = analyze_customer(customer)
+        result = asyncio.run(analyze_customer(customer))
         results.append(result)
 
         risk  = result["risk_level"]
