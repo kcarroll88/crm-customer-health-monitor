@@ -1,0 +1,122 @@
+[
+  {
+    "company_name": "Northbridge Logistics",
+    "account_manager": "Emily Carter",
+    "contract_value": 85000,
+    "days_since_last_login": 2,
+    "support_tickets_last_30_days": 1,
+    "email_response_rate": 92,
+    "nps_score": 9,
+    "last_communication_sentiment": "positive",
+    "months_as_customer": 18,
+    "last_note": "Client praised recent reporting updates and is exploring expanding licenses to additional teams."
+  },
+  {
+    "company_name": "HelioTech Solutions",
+    "account_manager": "Marcus Lee",
+    "contract_value": 120000,
+    "days_since_last_login": 14,
+    "support_tickets_last_30_days": 5,
+    "email_response_rate": 65,
+    "nps_score": 6,
+    "last_communication_sentiment": "neutral",
+    "months_as_customer": 10,
+    "last_note": "Experiencing minor integration issues with marketing tools; monitoring engagement closely."
+  },
+  {
+    "company_name": "GreenField AgriCorp",
+    "account_manager": "Samantha Ortiz",
+    "contract_value": 45000,
+    "days_since_last_login": 30,
+    "support_tickets_last_30_days": 7,
+    "email_response_rate": 40,
+    "nps_score": 4,
+    "last_communication_sentiment": "negative",
+    "months_as_customer": 6,
+    "last_note": "Frustration with onboarding process; may require additional training to avoid churn."
+  },
+  {
+    "company_name": "Vertex Financial Group",
+    "account_manager": "Daniel Kim",
+    "contract_value": 175000,
+    "days_since_last_login": 1,
+    "support_tickets_last_30_days": 2,
+    "email_response_rate": 88,
+    "nps_score": 10,
+    "last_communication_sentiment": "positive",
+    "months_as_customer": 24,
+    "last_note": "Highly engaged power users; discussing multi-year renewal with potential upsell."
+  },
+  {
+    "company_name": "BluePeak Manufacturing",
+    "account_manager": "Rachel Nguyen",
+    "contract_value": 60000,
+    "days_since_last_login": 21,
+    "support_tickets_last_30_days": 3,
+    "email_response_rate": 55,
+    "nps_score": 5,
+    "last_communication_sentiment": "neutral",
+    "months_as_customer": 12,
+    "last_note": "Usage declining slightly; planning QBR to re-engage stakeholders."
+  },
+  {
+    "company_name": "UrbanCore Development",
+    "account_manager": "James Patel",
+    "contract_value": 95000,
+    "days_since_last_login": 60,
+    "support_tickets_last_30_days": 8,
+    "email_response_rate": 30,
+    "nps_score": 3,
+    "last_communication_sentiment": "negative",
+    "months_as_customer": 9,
+    "last_note": "Low engagement and poor sentiment; renewal at high risk unless issues are resolved quickly."
+  },
+  {
+    "company_name": "Nimbus Health Systems",
+    "account_manager": "Olivia Bennett",
+    "contract_value": 140000,
+    "days_since_last_login": 3,
+    "support_tickets_last_30_days": 2,
+    "email_response_rate": 90,
+    "nps_score": 8,
+    "last_communication_sentiment": "positive",
+    "months_as_customer": 15,
+    "last_note": "Strong adoption across departments; recently added new workflows successfully."
+  },
+  {
+    "company_name": "Quantum Retail Analytics",
+    "account_manager": "Ethan Brooks",
+    "contract_value": 30000,
+    "days_since_last_login": 45,
+    "support_tickets_last_30_days": 4,
+    "email_response_rate": 50,
+    "nps_score": 5,
+    "last_communication_sentiment": "neutral",
+    "months_as_customer": 8,
+    "last_note": "Mid-tier engagement; client evaluating alternative platforms but still active."
+  },
+  {
+    "company_name": "IronClad Security",
+    "account_manager": "Sophia Martinez",
+    "contract_value": 200000,
+    "days_since_last_login": 0,
+    "support_tickets_last_30_days": 1,
+    "email_response_rate": 95,
+    "nps_score": 9,
+    "last_communication_sentiment": "positive",
+    "months_as_customer": 36,
+    "last_note": "Top-tier account; recently signed expansion deal and provided strong referral."
+  },
+  {
+    "company_name": "Summit Education Services",
+    "account_manager": "Liam O'Connor",
+    "contract_value": 25000,
+    "days_since_last_login": 75,
+    "support_tickets_last_30_days": 6,
+    "email_response_rate": 20,
+    "nps_score": 2,
+    "last_communication_sentiment": "negative",
+    "months_as_customer": 5,
+    "last_note": "Very low engagement and responsiveness; likely churn candidate this quarter."
+  }
+]
